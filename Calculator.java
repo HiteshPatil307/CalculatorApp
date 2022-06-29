@@ -43,7 +43,7 @@ public class Calculator
 	{
 		Scanner s1  = new Scanner(System.in);  
 		
-		MathOperation m = new MathOperation();
+		Calculator m = new Calculator();
 		
 		int ch, ans;
 		
