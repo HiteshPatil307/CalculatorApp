@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class MathOperation 
+public class Calculator
 {
 	Scanner s  = new Scanner(System.in);
 	 
