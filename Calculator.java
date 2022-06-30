@@ -1,23 +1,15 @@
 
 
 
-import java.util.Scanner;
+
 
 public class Calculator
 {
-	Scanner s  = new Scanner(System.in);
+	
 	 
-	private int x, y;
+	private int x=5, y=10;
 	private int R;
 	
-	public void init()
-	{
-		System.out.println("Enter the Value of X :");
-		x = s.nextInt();
-		
-		System.out.println("Enter the Value of Y :");
-		y = s.nextInt();
-	}
 	public void add()
 	{
 		R = x + y;
@@ -41,52 +33,27 @@ public class Calculator
 
 	public static void main(String[] args)
 	{
-		Scanner s1  = new Scanner(System.in);  
+		  
 		
 		Calculator m = new Calculator();
 		
-		int ch, ans;
-		
-		do
-		{
-			System.out.println("1.Addition");
-			System.out.println("2.Subtraction");
-			System.out.println("3.Multiplication");
-			System.out.println("4.");
-			System.out.println("5.Exit");
 			
-			System.out.println("Enter Your Choice :");
-			ch = s1.nextInt();
-			m.init();
-			switch(ch)
-			{
-			case 1:
+			System.out.println("1.Addition");
 				m.add();
 				m.display();
-				break;
-			case 2:
+				
+			System.out.println("2.Subtraction");
 				m.sub();
 				m.display();
-				break;
-			case 3:
+				
+			System.out.println("3.Multiplication");
 				m.multiply();
 				m.display();
-				break;
-			case 4:
+			System.out.println("4.Power");	
 				m.power();
 				m.display();
-				break;
-			case 5:
-				System.exit(0);
-			default:
-				System.out.println("Invalid Choice");
-			}
+
 			
-			System.out.println("Do you wnat to continue?(1/0).");
-			ans = s1.nextInt();
-			
-		}while(ans != 0);
-		s1.close();
 	}
 }
 
